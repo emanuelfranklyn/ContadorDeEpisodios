@@ -76,7 +76,7 @@ function DrawnUi()
         gpu.bind(screen1.address, true)
     end
     --[DrawnControls]--
-    gpu.setResolution(150,7)
+    gpu.setResolution(50,7)
     w, h = gpu.getResolution()
     gpu.setForeground(0xFFFFFF)
     gpu.setBackground(0x000000)
@@ -118,7 +118,7 @@ function clickParser(_, monitorAddress, x, y, button)
                 gpu.bind(screen1.address, true)
             end
             os.sleep(0.5)
-            gpu.setResolution(150,7)
+            gpu.setResolution(50,7)
             --[Check where he clicks]-- (Y doesn't care)
             w, h = gpu.getResolution()
             if (x < (w/3)) then
