@@ -28,7 +28,7 @@ end
 function ReadEpisode()
     EpisodeReader = io.open(EpisodioFilePath, "r")
     RawEpisode = EpisodeReader:read()
-    EpisodeWritter:close()
+    EpisodeReader:close()
     RawEpisode = serialization.unserialize(RawEpisode)
     Episodio = RawEpisode["Episode"]
     NumberScreen = RawEpisode['NumberScreem']
